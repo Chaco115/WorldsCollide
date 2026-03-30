@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Worlds Collide - Loading</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #0a0a0a, #1a1a2e, #16213e);
+        font-family: Arial, sans-serif;
+        color: white;
+        overflow: hidden;
+    }
+
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 3em;
+        letter-spacing: 4px;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        opacity: 0.7;
+        margin-bottom: 40px;
+    }
+
+    .progress-bar {
+        width: 100%;
+        height: 25px;
+        background: rgba(255,255,255,0.1);
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .progress {
+        height: 100%;
+        width: 0%;
+        background: linear-gradient(90deg, #00c6ff, #0072ff);
+        border-radius: 20px;
+        transition: width 0.2s;
+    }
+
+    .status {
+        margin-top: 15px;
+        font-size: 1em;
+        opacity: 0.8;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Worlds Collide</h1>
+    <div class="subtitle">Loading your experience...</div>
+
+    <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+    </div>
+
+    <div class="status" id="status">Starting...</div>
+</div>
+
+<script>
+    function GameDetails(servername, serverurl, mapname, maxplayers, steamid, gamemode) {
+        document.getElementById("status").innerText = "Server: " + servername;
+    }
+
+    function SetStatusChanged(status) {
+        document.getElementById("status").innerText = status;
+    }
+
+    function DownloadingFile(fileName) {
+        document.getElementById("status").innerText = "Downloading: " + fileName;
+    }
+
+    function SetFilesTotal(total) {
+        window.totalFiles = total;
+    }
+
+    function SetFilesNeeded(needed) {
+        let progress = 0;
+        if (window.totalFiles > 0) {
+            progress = ((window.totalFiles - needed) / window.totalFiles) * 100;
+        }
+        document.getElementById("progress").style.width = progress + "%";
+    }
+</script>
+
+</body>
+</html>
