@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Worlds Collide RP</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0b0b0b;
+        color: #e6e6e6;
+    }
+
+    header {
+        background: #141414;
+        padding: 30px;
+        text-align: center;
+        border-bottom: 2px solid #2a2a2a;
+    }
+
+    h1 {
+        margin: 0;
+        color: #f0c674;
+        font-size: 42px;
+        letter-spacing: 2px;
+    }
+
+    p.subtitle {
+        margin-top: 10px;
+        color: #aaa;
+    }
+
+    .container {
+        padding: 40px;
+        text-align: center;
+    }
+
+    .card {
+        background: #161616;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 500px;
+        border-radius: 10px;
+        border: 1px solid #2a2a2a;
+    }
+
+    a.button {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 12px 20px;
+        background: #f0c674;
+        color: #000;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+    }
+
+    a.button:hover {
+        background: #ffd98a;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        color: #666;
+        border-top: 1px solid #222;
+        margin-top: 40px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Worlds Collide</h1>
+    <p class="subtitle">A Persistent Wasteland Roleplay Experience</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Enter the Wasteland</h2>
+        <p>A fractured world where factions from different realities are pulled together by a mysterious rift.</p>
+    </div>
+
+    <div class="card">
+        <h2>Rules & Guidelines</h2>
+        <p>Read server rules before joining to ensure fair and immersive roleplay.</p>
+        <a class="button" href="\rules"> Rules Page</a>
+    </div>
+
+    <div class="card">
+        <h2>Factions</h2>
+        <p>Brotherhood of Steel, ODST, Imperial Guard, and player-created factions fight for control of the wasteland.</p>
+    </div>
+
+</div>
+
+<footer>
+    Worlds Collide RP Server ©
+</footer>
+
+</body>
+</html>
