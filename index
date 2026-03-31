@@ -1,153 +1,104 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Worlds Collide - War Unfolding</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Worlds Collide RP</title>
 <style>
     body {
         margin: 0;
-        padding: 0;
-        background: #050505; /* MUCH darker */
         font-family: Arial, sans-serif;
-        color: white;
-        overflow: hidden;
+        background: #0b0b0b;
+        color: #e6e6e6;
     }
 
-    /* Subtle dark smoke (no bright colors) */
-    body::before {
-        content: "";
-        position: absolute;
-        width: 200%;
-        height: 200%;
-        background: radial-gradient(circle, rgba(255,255,255,0.03), transparent 70%);
-        animation: drift 20s linear infinite;
-    }
-
-    @keyframes drift {
-        0% { transform: translate(-10%, -10%); }
-        100% { transform: translate(10%, 10%); }
-    }
-
-    .container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    header {
+        background: #141414;
+        padding: 30px;
         text-align: center;
-        width: 75%;
-        z-index: 2;
+        border-bottom: 2px solid #2a2a2a;
     }
 
     h1 {
-        font-size: 3em;
-        letter-spacing: 6px;
-        margin-bottom: 10px;
-        text-shadow: 0 0 15px rgba(255,255,255,0.25);
+        margin: 0;
+        color: #f0c674;
+        font-size: 42px;
+        letter-spacing: 2px;
     }
 
-    .subtitle {
-        opacity: 0.6;
-        margin-bottom: 30px;
+    p.subtitle {
+        margin-top: 10px;
+        color: #aaa;
     }
 
-    .eventText {
-        font-size: 1.2em;
-        margin-bottom: 25px;
-        color: #ff4d4d;
-        min-height: 24px;
-        text-shadow: 0 0 10px rgba(255,0,0,0.3);
-        transition: opacity 0.5s;
+    .container {
+        padding: 40px;
+        text-align: center;
     }
 
-    .progress-bar {
-        width: 100%;
-        height: 22px;
-        background: rgba(255,255,255,0.05);
-        border-radius: 20px;
-        overflow: hidden;
-        box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    .card {
+        background: #161616;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 500px;
+        border-radius: 10px;
+        border: 1px solid #2a2a2a;
     }
 
-    .progress {
-        height: 100%;
-        width: 0%;
-        background: linear-gradient(90deg, #ff2a2a, #ff9900);
-        transition: width 0.2s;
+    a.button {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 12px 20px;
+        background: #f0c674;
+        color: #000;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
     }
 
-    .status {
-        margin-top: 12px;
-        font-size: 0.95em;
-        opacity: 0.75;
+    a.button:hover {
+        background: #ffd98a;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        color: #666;
+        border-top: 1px solid #222;
+        margin-top: 40px;
     }
 </style>
 </head>
-
 <body>
 
-<div class="container">
+<header>
     <h1>Worlds Collide</h1>
-    <div class="subtitle">The war doesn’t wait for anyone...</div>
+    <p class="subtitle">A Persistent Wasteland Roleplay Experience</p>
+</header>
 
-    <div class="eventText" id="eventText">The city is holding its breath...</div>
+<div class="container">
 
-    <div class="progress-bar">
-        <div class="progress" id="progress"></div>
+    <div class="card">
+        <h2>Enter the Wasteland</h2>
+        <p>A fractured world where factions from different realities are pulled together by a mysterious rift.</p>
     </div>
 
-    <div class="status" id="status">Preparing battlefield...</div>
+    <div class="card">
+        <h2>Rules & Guidelines</h2>
+        <p>Read server rules before joining to ensure fair and immersive roleplay.</p>
+        <a class="button" href="\rules"> Rules Page</a>
+    </div>
+
+    <div class="card">
+        <h2>Factions</h2>
+        <p>Brotherhood of Steel, ODST, Imperial Guard, and player-created factions fight for control of the wasteland.</p>
+    </div>
+
 </div>
 
-<script>
-    const events = [
-        "⚔️ Gunfire echoes between rival factions...",
-        "🏃 Civilians scatter as fighting reaches the streets...",
-        "💀 Mercenaries push into contested zones...",
-        "🔥 Fires spread — no side is winning...",
-        "🛡️ Enforcers struggle to hold the line...",
-        "😨 Civilians hide and pray it ends...",
-        "💥 Explosions tear through the silence...",
-        "🕶️ Chaos creates new opportunities...",
-        "🩸 Survival is no longer guaranteed..."
-    ];
-
-    let i = 0;
-    setInterval(() => {
-        const text = document.getElementById("eventText");
-        text.style.opacity = 0;
-
-        setTimeout(() => {
-            text.innerText = events[i];
-            text.style.opacity = 1;
-            i = (i + 1) % events.length;
-        }, 400);
-    }, 3500);
-
-    function GameDetails(servername) {
-        document.getElementById("status").innerText = "Deploying to: " + servername;
-    }
-
-    function SetStatusChanged(status) {
-        document.getElementById("status").innerText = status;
-    }
-
-    function DownloadingFile(fileName) {
-        document.getElementById("status").innerText = "Receiving assets: " + fileName;
-    }
-
-    function SetFilesTotal(total) {
-        window.totalFiles = total;
-    }
-
-    function SetFilesNeeded(needed) {
-        let progress = 0;
-        if (window.totalFiles > 0) {
-            progress = ((window.totalFiles - needed) / window.totalFiles) * 100;
-        }
-        document.getElementById("progress").style.width = progress + "%";
-    }
-</script>
+<footer>
+    Worlds Collide RP Server ©
+</footer>
 
 </body>
 </html>
