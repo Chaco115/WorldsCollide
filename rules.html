@@ -1,158 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Worlds Collide Rp Sever Rules</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Worlds Collide — Rules</title>
+
 <style>
     body {
+        margin: 0;
         font-family: Arial, sans-serif;
-        background-color: #0f0f0f;
-        color: #e6e6e6;
-        margin: 0;
-        padding: 0;
-        line-height: 1.6;
+        background: #0b0f1a;
+        color: #ffffff;
     }
+
     header {
-        background: #1a1a1a;
-        padding: 20px;
+        background: #070a14;
+        padding: 25px;
         text-align: center;
-        border-bottom: 2px solid #333;
+        border-bottom: 2px solid #00ffff;
     }
-    h1 {
+
+    header h1 {
         margin: 0;
-        color: #f0c674;
+        font-size: 2.6rem;
+        letter-spacing: 1px;
+        color: #ffffff;
     }
+
     nav {
-        background: #141414;
-        padding: 10px;
-        text-align: center;
-        position: sticky;
-        top: 0;
+        margin-top: 10px;
     }
+
     nav a {
-        color: #ccc;
-        margin: 0 10px;
+        margin: 0 12px;
         text-decoration: none;
+        color: #00ffff;
+        font-weight: bold;
+        transition: 0.2s;
     }
+
     nav a:hover {
+        color: #ffd700;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 40px 20px;
+    }
+
+    .intro {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .intro h2 {
+        font-size: 2rem;
+        color: #ffd700;
+    }
+
+    .intro p {
+        color: #cccccc;
+    }
+
+    .rules-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    .rule-card {
+        background: #11162a;
+        border: 2px solid #00ffff;
+        border-radius: 10px;
+        padding: 20px;
+        transition: 0.2s;
+    }
+
+    .rule-card:hover {
+        transform: translateY(-3px);
+        border-color: #ffd700;
+    }
+
+    .rule-card h3 {
+        margin-top: 0;
+        color: #00ffff;
+        font-size: 1.3rem;
+    }
+
+    .rule-card p {
+        color: #d0d0d0;
+        font-size: 0.95rem;
+        line-height: 1.4rem;
+    }
+
+    .severity {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 4px 10px;
+        font-size: 0.8rem;
+        border-radius: 5px;
+        background: #00ffff;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .severity.high {
+        background: #ff4d4d;
         color: #fff;
     }
-    section {
-        padding: 20px;
-        border-bottom: 1px solid #222;
+
+    .severity.medium {
+        background: #ffcc00;
+        color: #000;
     }
-    h2 {
-        color: #f0c674;
-    }
-    .box {
-        background: #1a1a1a;
-        padding: 15px;
-        border-radius: 8px;
+
+    footer {
+        text-align: center;
+        padding: 25px;
+        margin-top: 40px;
+        color: #888;
+        border-top: 1px solid #222;
     }
 </style>
 </head>
+
 <body>
 
 <header>
-    <h1>Worlds Collide RP Server</h1>
-    <p>Rules, Systems & Guidelines</p>
+    <h1>Worlds Collide — Rules</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="staff.html">Staff</a>
+        <a href="https://discord.gg">Discord</a>
+    </nav>
 </header>
 
-<nav>
-    <a href="#general">General</a>
-    <a href="#rp">Roleplay</a>
-    <a href="#factions">Factions</a>
-    <a href="#territory">Territory</a>
-    <a href="#combat">Combat</a>
-    <a href="#rift">Rift System</a>
-    <a href="#custom">Custom Factions</a>
-    <a href="#staff">Staff Rules</a>
-    <a href="#evidence">Evidence</a>
-</nav>
+<div class="container">
 
-<section id="general">
-    <h2>General Rules</h2>
-    <div class="box">
-        <p>No RDM, no NLR abuse, no metagaming, no powergaming.</p>
-        <p>Respect all players and staff.</p>
-        <p>Stay in character unless in OOC areas.</p>
+    <div class="intro">
+        <h2>Server Rules</h2>
+        <p>Follow these rules to keep Worlds Collide fair, fun, and balanced for everyone.</p>
     </div>
-</section>
 
-<section id="rp">
-    <h2>Roleplay Rules</h2>
-    <div class="box">
-        <p>All actions must be realistically roleplayed.</p>
-        <p>Fear RP must be followed when outmatched or disarmed.</p>
-        <p>No unrealistic behavior that breaks immersion.</p>
-    </div>
-</section>
+    <div class="rules-grid">
 
-<section id="factions">
-    <h2>Faction Rules</h2>
-    <div class="box">
-        <p>Each faction must maintain rank structure.</p>
-        <p>Follow leadership orders unless they break server rules.</p>
-        <p>Faction switching requires approval.</p>
-    </div>
-</section>
+        <div class="rule-card">
+            <h3>No Exploiting</h3>
+            <p>Using glitches, hacks, or unintended mechanics to gain advantage is strictly forbidden.</p>
+            <span class="severity high">HIGH SEVERITY</span>
+        </div>
 
-<section id="territory">
-    <h2>Territory & Bases</h2>
-    <div class="box">
-        <p>Gas stations and police stations are contested zones.</p>
-        <p>Bases must be realistic and grounded in RP.</p>
-        <p>Raiding requires valid RP reason and escalation.</p>
-    </div>
-</section>
+        <div class="rule-card">
+            <h3>No Toxicity</h3>
+            <p>Harassment, hate speech, or targeted insults toward players or staff will not be tolerated.</p>
+            <span class="severity high">HIGH SEVERITY</span>
+        </div>
 
-<section id="combat">
-    <h2>Combat Rules</h2>
-    <div class="box">
-        <p>Clear initiation is required before combat.</p>
-        <p>No combat logging.</p>
-        <p>Downed players are incapacitated unless revived.</p>
-    </div>
-</section>
+        <div class="rule-card">
+            <h3>No Random Deathmatch (RDM)</h3>
+            <p>Do not attack or kill players without valid roleplay reasoning or engagement.</p>
+            <span class="severity medium">MEDIUM SEVERITY</span>
+        </div>
 
-<section id="rift">
-    <h2>Rift System</h2>
-    <div class="box">
-        <p>Players spawn through a random rift event.</p>
-        <p>New arrivals must RP confusion/disorientation.</p>
-        <p>Factions may recruit or intercept arrivals.</p>
-    </div>
-</section>
+        <div class="rule-card">
+            <h3>No New Life Rule (NLR) Breaking</h3>
+            <p>If you die, you cannot return to the same situation or remember prior events.</p>
+            <span class="severity medium">MEDIUM SEVERITY</span>
+        </div>
 
-<section id="custom">
-    <h2>Custom Factions</h2>
-    <div class="box">
-        <p>Must be staff approved.</p>
-        <p>No overpowered or lore-breaking factions.</p>
-        <p>Must have clear RP purpose and structure.</p>
-    </div>
-</section>
+        <div class="rule-card">
+            <h3>Respect Staff Decisions</h3>
+            <p>Staff have final say in disputes. Arguing excessively or refusing moderation may lead to punishment.</p>
+            <span class="severity high">HIGH SEVERITY</span>
+        </div>
 
-<section id="staff">
-    <h2>Staff Rules & Abuse</h2>
-    <div class="box">
-        <p>Staff must remain neutral and fair at all times.</p>
-        <p>No using commands for personal gain or RP advantage.</p>
-        <p>Abuse of powers results in removal or punishment.</p>
-        <p>All actions must be documented when possible.</p>
-    </div>
-</section>
+        <div class="rule-card">
+            <h3>No Stealing / Duping</h3>
+            <p>Any form of item duplication or unauthorized taking of player assets is prohibited.</p>
+            <span class="severity high">HIGH SEVERITY</span>
+        </div>
+        <div class="rule-card">
+    <h3>Zero Tolerance: Child Exploitation</h3>
+    <p>
+        Any form of sexual exploitation, grooming, or inappropriate conduct involving minors is strictly prohibited.
+        This includes any behavior, messaging, or roleplay that references or implies such actions.
+    </p>
+    <p>
+        Violations will result in an immediate and permanent ban from the server, and may be reported to appropriate
+        legal authorities or platforms depending on the severity of the situation.
+    </p>
+    <span class="severity high">ZERO TOLERANCE</span>
+</div>
 
-<section id="evidence">
-    <h2>Evidence Requirements</h2>
-    <div class="box">
-        <p><b>Video Required:</b> NLR, RDM, stealing, raiding issues, combat logging.</p>
-        <p><b>Video or Strong Evidence:</b> Powergaming, metagaming, kidnapping disputes.</p>
-        <p><b>Chat Logs Accepted:</b> Hate speech, harassment, OOC abuse.</p>
-        <p>Staff may request additional evidence at any time.</p>
     </div>
-</section>
+
+</div>
+
+<footer>
+    © 2026 Worlds Collide — All Rights Reserved
+</footer>
 
 </body>
 </html>
