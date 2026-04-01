@@ -1,105 +1,117 @@
 <!DOCTYPE html>
-<!-- Discord / Social Embed -->
-<html lang = "en">
+<html lang="en">
 <head>
-<meta charset = "UTF-8">
-<title>Worlds Collide RP</title>
-<style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #0b0b0b;
-        color: #e6e6e6;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    header {
-        background: #141414;
-        padding: 30px;
-        text-align: center;
-        border-bottom: 2px solid #2a2a2a;
-    }
+    <title>Worlds Collide</title>
 
-    h1 {
-        margin: 0;
-        color: #f0c674;
-        font-size: 42px;
-        letter-spacing: 2px;
-    }
+    <!-- Discord Embed -->
+    <meta property="og:title" content="Worlds Collide">
+    <meta property="og:description" content="Enter Worlds Collide – immersive RP and custom rules.">
+    <meta property="og:image" content="https://chaco115.github.io/WorldsCollide/banner.png">
+    <meta property="og:url" content="https://chaco115.github.io/WorldsCollide/">
 
-    p.subtitle {
-        margin-top: 10px;
-        color: #aaa;
-    }
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #00bcd4, #0288d1);
+            color: white;
+            text-align: center;
+        }
 
-    .container {
-        padding: 40px;
-        text-align: center;
-    }
+        .container {
+            padding: 40px 20px;
+        }
 
-    .card {
-        background: #161616;
-        padding: 20px;
-        margin: 20px auto;
-        max-width: 500px;
-        border-radius: 10px;
-        border: 1px solid #2a2a2a;
-    }
+        .logo {
+            max-width: 300px;
+            width: 90%;
+            margin-bottom: 20px;
+        }
 
-    a.button {
-        display: inline-block;
-        margin-top: 10px;
-        padding: 12px 20px;
-        background: #f0c674;
-        color: #000;
-        text-decoration: none;
-        border-radius: 6px;
-        font-weight: bold;
-    }
+        h1 {
+            font-size: 3em;
+            margin: 10px 0;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(255,255,255,0.5);
+        }
 
-    a.button:hover {
-        background: #ffd98a;
-    }
+        p {
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
 
-    footer {
-        text-align: center;
-        padding: 20px;
-        color: #667;
-        border-top: 1px solid #222;
-        margin-top: 40px;
-    }
-</style>
+        .btn {
+            display: block;
+            width: 250px;
+            margin: 15px auto;
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .btn-primary {
+            background: white;
+            color: #0288d1;
+            font-weight: bold;
+        }
+
+        .btn-primary:hover {
+            background: #e0f7fa;
+        }
+
+        .btn-gold {
+            background: #ffd54f;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .btn-gold:hover {
+            background: #ffca28;
+        }
+
+        footer {
+            margin-top: 50px;
+            opacity: 0.6;
+            font-size: 14px;
+        }
+
+        /* Glow effect */
+        .btn:hover {
+            box-shadow: 0 0 15px rgba(255,255,255,0.6);
+        }
+    </style>
 </head>
 <body>
 
-<header>
-    <h1>Worlds Collide</h1>
-    <p class="subtitle">A Persistent conflict Roleplay Experience</p>
-</header>
+    <div class="container">
 
-<div class="container">
+        <!-- LOGO -->
+        <img src="logo.png" alt="Worlds Collide Logo" class="logo">
 
-    <div class="card">
-        <h2>Enter the Wasteland</h2>
-        <p>A fractured world where factions from different realities are pulled together by a mysterious rift.</p>
+        <h1>Worlds Collide</h1>
+        <p>Where worlds meet, rules matter, and your story begins.</p>
+
+        <!-- BUTTONS (EDIT LINKS ONLY) -->
+        <a href="rules.html" class="btn btn-primary">View Rules</a>
+
+        <a href="https://discord.gg/YOURINVITE" class="btn btn-gold" target="_blank">
+            Join Discord
+        </a>
+
+        <a href="staff.html" class="btn btn-primary">Staff Team</a>
+
     </div>
 
-    <div class="card">
-        <h2>Rules & Guidelines</h2>
-        <p>Read server rules before joining to ensure fair and immersive roleplay.</p>
-        <a class="button" href="rules.html"> Rules Page</a>
-    </div>
-
-    <div class="card">
-        <h2>Factions</h2>
-        <p>Brotherhood of Steel, UNSC, Imperium, and custom factions fight for the world.</p>
-        <p> Who will you be? </p>
-    </div>
-
-</div>
-
-<footer>
-    Worlds Collide RP ©
-</footer>
+    <footer>
+        © 2026 Worlds Collide
+    </footer>
 
 </body>
 </html>
