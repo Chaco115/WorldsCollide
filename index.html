@@ -13,11 +13,11 @@
         color: white;
     }
 
-    /* TOP HEADER BAR */
+    /* HEADER */
     .topbar {
         background: #070a14;
         border-bottom: 2px solid #00ffff;
-        padding: 30px 20px;
+        padding: 25px 20px;
         text-align: center;
     }
 
@@ -28,12 +28,46 @@
     }
 
     .subtitle {
-        margin-top: 10px;
+        margin-top: 8px;
         color: #cfcfcf;
-        font-size: 1.1rem;
     }
 
-    /* MAIN PANEL LAYOUT */
+    /* HERO IMAGE SECTION */
+    .hero {
+        position: relative;
+        width: 100%;
+        max-height: 420px;
+        overflow: hidden;
+        border-bottom: 2px solid #00ffff;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+        filter: brightness(0.65);
+    }
+
+    .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .hero-text h2 {
+        font-size: 2.2rem;
+        color: #ffffff;
+        margin: 0;
+    }
+
+    .hero-text p {
+        color: #00ffff;
+        margin-top: 10px;
+    }
+
+    /* MAIN CONTENT */
     .container {
         max-width: 1100px;
         margin: auto;
@@ -51,9 +85,9 @@
         border: 2px solid #00ffff;
         border-radius: 10px;
         padding: 20px;
-        transition: 0.2s;
         text-decoration: none;
         color: white;
+        transition: 0.2s;
         display: block;
     }
 
@@ -64,7 +98,7 @@
     }
 
     .panel h3 {
-        margin: 0 0 10px 0;
+        margin: 0 0 10px;
         color: #00ffff;
     }
 
@@ -75,24 +109,6 @@
 
     .panel.gold h3 {
         color: #ffd700;
-    }
-
-    /* FEATURE BOX */
-    .feature {
-        margin-bottom: 30px;
-        padding: 20px;
-        border-left: 3px solid #00ffff;
-        background: rgba(0,255,255,0.03);
-    }
-
-    .feature h2 {
-        margin: 0;
-        color: #ffffff;
-    }
-
-    .feature p {
-        margin-top: 10px;
-        color: #cfcfcf;
     }
 
     footer {
@@ -114,33 +130,32 @@
     </div>
 </div>
 
+<!-- 🔥 HERO IMAGE (YOUR ORIGINAL IMAGE GOES HERE) -->
+<div class="hero">
+    <img src="Logo.PNG" alt="Worlds Collide Banner">
+    <div class="hero-text">
+        <h2>Welcome to Worlds Collide</h2>
+        <p>Enter the world • Follow the rules • Build your story</p>
+    </div>
+</div>
+
 <div class="container">
 
-    <!-- FEATURE INTRO -->
-    <div class="feature">
-        <h2>Welcome</h2>
-        <p>
-            A structured roleplay and community server built around fair gameplay,
-            strong moderation, and immersive world systems.
-        </p>
-    </div>
-
-    <!-- MAIN NAV PANELS -->
     <div class="panel-grid">
 
         <a href="rules.html" class="panel">
             <h3>Server Rules</h3>
-            <p>Read all rules before joining gameplay to avoid punishment.</p>
+            <p>Read all rules before joining gameplay.</p>
         </a>
 
         <a href="staff.html" class="panel">
             <h3>Staff Team</h3>
-            <p>Meet the administrators and moderators managing the server.</p>
+            <p>Meet the people running the server.</p>
         </a>
 
-        <a href="https://discord.gg/nn6TtQrCzU" class="panel gold">
+        <a href="https://discord.gg" class="panel gold">
             <h3>Join Discord</h3>
-            <p>Connect with the community and get server updates.</p>
+            <p>Connect with the community instantly.</p>
         </a>
 
     </div>
