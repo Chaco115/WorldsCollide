@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Worlds Collide — Ideas</title>
+<title>Worlds Collide — Contact</title>
 
 <style>
     body {
@@ -55,86 +55,58 @@
 
     /* CONTAINER */
     .container {
-        max-width: 1100px;
+        max-width: 900px;
         margin: auto;
         padding: 40px 20px;
     }
 
-    /* GRID */
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-    }
-
-    /* CARD STYLE */
+    /* CARD */
     .card {
         background: #11162a;
         border: 2px solid #00ffff;
         border-radius: 10px;
-        padding: 20px;
+        padding: 25px;
+        margin-bottom: 20px;
         transition: 0.2s;
     }
 
     .card:hover {
-        transform: translateY(-4px);
         border-color: #ffd700;
-        box-shadow: 0 0 15px rgba(0,255,255,0.2);
     }
 
-    .card h3 {
-        margin-top: 0;
+    h2 {
         color: #00ffff;
+        margin-top: 0;
     }
 
-    .card p {
+    p {
         color: #cfcfcf;
-        font-size: 0.95rem;
-        line-height: 1.4rem;
+        line-height: 1.5rem;
     }
 
-    /* FORM STYLE */
-    input, textarea {
-        width: 100%;
-        padding: 10px;
-        margin-top: 8px;
-        margin-bottom: 12px;
-        border-radius: 6px;
-        border: 1px solid #00ffff;
-        background: #0b0f1a;
-        color: white;
-        outline: none;
-    }
-
-    button {
-        padding: 10px 16px;
-        border: none;
+    /* BUTTON */
+    .email-btn {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 12px 18px;
         border-radius: 6px;
         background: #00ffff;
         color: #000;
         font-weight: bold;
-        cursor: pointer;
+        text-decoration: none;
         transition: 0.2s;
     }
 
-    button:hover {
+    .email-btn:hover {
         background: #ffd700;
     }
 
-    /* IDEA LIST */
-    .idea {
-        border-left: 3px solid #00ffff;
-        padding-left: 12px;
-        margin-bottom: 15px;
-    }
-
-    .idea h4 {
-        margin: 0;
-        color: #ffffff;
-    }
-
-    .idea small {
-        color: #888;
+    /* WARNING BOX */
+    .warning {
+        border-left: 4px solid #ffd700;
+        padding: 15px;
+        background: rgba(255, 215, 0, 0.05);
+        color: #e6e6e6;
     }
 
     footer {
@@ -150,69 +122,55 @@
 <body>
 
 <header>
-    <h1>IDEAS</h1>
-    <p>Submit suggestions and help shape the future of Worlds Collide</p>
+    <h1>CONTACT</h1>
+    <p>Send ideas, reports, or business inquiries directly to our team</p>
 
     <nav>
         <a href="index.html">Home</a>
         <a href="rules.html">Rules</a>
         <a href="factions.html">Factions</a>
+        <a href="ideas.html">Ideas</a>
     </nav>
 </header>
 
 <div class="container">
 
-    <div class="grid">
+    <!-- EMAIL SECTION -->
+    <div class="card">
+        <h2>Email Us</h2>
+        <p>
+            Click the button below to send an email directly to our staff team.
+            Use this for ideas, reports, faction requests, or general inquiries.
+        </p>
 
-        <!-- SUBMIT IDEA -->
-        <div class="card">
-            <h3>Submit an Idea</h3>
-            <p>Have an idea for events, systems, mechanics, or improvements? Submit it here.</p>
+        <!-- CHANGE THIS EMAIL -->
+        <a class="email-btn" href="mailto:yourbusinessemail@example.com?subject=Worlds%20Collide%20Inquiry">
+            Send Email
+        </a>
+    </div>
 
-            <form>
-                <label>Idea Title</label>
-                <input type="text" placeholder="Enter idea title">
+    <!-- DISCLAIMER -->
+    <div class="card warning">
+        <h2>Response Time Disclaimer</h2>
+        <p>
+            Response times may vary depending on staff availability and message volume.
+            Please allow up to <b>24–72 hours</b> for a response.
+        </p>
+        <p>
+            Urgent reports are prioritized, but non-critical messages may take longer during peak activity.
+        </p>
+    </div>
 
-                <label>Description</label>
-                <textarea rows="6" placeholder="Explain your idea in detail..."></textarea>
-
-                <button type="button">Submit Idea</button>
-            </form>
-        </div>
-
-        <!-- RECENT IDEAS -->
-        <div class="card">
-            <h3>Recent Ideas</h3>
-
-            <div class="idea">
-                <h4>Faction Territory System</h4>
-                <small>Submitted by Player123</small>
-                <p>Allow factions to claim and defend regions on the map.</p>
-            </div>
-
-            <div class="idea">
-                <h4>Dynamic Weather Events</h4>
-                <small>Submitted by Player456</small>
-                <p>Random storms and environmental effects affecting gameplay.</p>
-            </div>
-
-            <div class="idea">
-                <h4>Economy Revamp</h4>
-                <small>Submitted by Player789</small>
-                <p>Add trading systems, shops, and inflation control.</p>
-            </div>
-
-        </div>
-
-        <!-- INFO PANEL -->
-        <div class="card">
-            <h3>How Ideas Work</h3>
-            <p>
-                Ideas are reviewed by staff and may be added into the server if approved.
-                High-quality suggestions may be implemented or expanded into full systems.
-            </p>
-        </div>
-
+    <!-- INFO -->
+    <div class="card">
+        <h2>What You Can Email Us About</h2>
+        <p>
+            • Server ideas and suggestions<br>
+            • Faction applications<br>
+            • Player reports<br>
+            • Partnership requests<br>
+            • General questions
+        </p>
     </div>
 
 </div>
