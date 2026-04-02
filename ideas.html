@@ -1,1 +1,225 @@
-...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Worlds Collide — Ideas</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0b0f1a;
+        color: white;
+    }
+
+    /* HEADER */
+    header {
+        background: #070a14;
+        border-bottom: 2px solid #00ffff;
+        padding: 25px;
+        text-align: center;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2.8rem;
+        letter-spacing: 2px;
+    }
+
+    header p {
+        margin-top: 8px;
+        color: #cfcfcf;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        margin: 0 10px;
+        padding: 10px 16px;
+        border: 2px solid #00ffff;
+        border-radius: 6px;
+        text-decoration: none;
+        color: #00ffff;
+        font-weight: bold;
+        transition: 0.2s;
+        background: rgba(0,255,255,0.05);
+    }
+
+    nav a:hover {
+        background: #00ffff;
+        color: #000;
+    }
+
+    /* CONTAINER */
+    .container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 40px 20px;
+    }
+
+    /* GRID */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    /* CARD STYLE */
+    .card {
+        background: #11162a;
+        border: 2px solid #00ffff;
+        border-radius: 10px;
+        padding: 20px;
+        transition: 0.2s;
+    }
+
+    .card:hover {
+        transform: translateY(-4px);
+        border-color: #ffd700;
+        box-shadow: 0 0 15px rgba(0,255,255,0.2);
+    }
+
+    .card h3 {
+        margin-top: 0;
+        color: #00ffff;
+    }
+
+    .card p {
+        color: #cfcfcf;
+        font-size: 0.95rem;
+        line-height: 1.4rem;
+    }
+
+    /* FORM STYLE */
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 8px;
+        margin-bottom: 12px;
+        border-radius: 6px;
+        border: 1px solid #00ffff;
+        background: #0b0f1a;
+        color: white;
+        outline: none;
+    }
+
+    button {
+        padding: 10px 16px;
+        border: none;
+        border-radius: 6px;
+        background: #00ffff;
+        color: #000;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    button:hover {
+        background: #ffd700;
+    }
+
+    /* IDEA LIST */
+    .idea {
+        border-left: 3px solid #00ffff;
+        padding-left: 12px;
+        margin-bottom: 15px;
+    }
+
+    .idea h4 {
+        margin: 0;
+        color: #ffffff;
+    }
+
+    .idea small {
+        color: #888;
+    }
+
+    footer {
+        text-align: center;
+        padding: 25px;
+        color: #777;
+        border-top: 1px solid #222;
+        margin-top: 50px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>IDEAS</h1>
+    <p>Submit suggestions and help shape the future of Worlds Collide</p>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="rules.html">Rules</a>
+        <a href="factions.html">Factions</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <div class="grid">
+
+        <!-- SUBMIT IDEA -->
+        <div class="card">
+            <h3>Submit an Idea</h3>
+            <p>Have an idea for events, systems, mechanics, or improvements? Submit it here.</p>
+
+            <form>
+                <label>Idea Title</label>
+                <input type="text" placeholder="Enter idea title">
+
+                <label>Description</label>
+                <textarea rows="6" placeholder="Explain your idea in detail..."></textarea>
+
+                <button type="button">Submit Idea</button>
+            </form>
+        </div>
+
+        <!-- RECENT IDEAS -->
+        <div class="card">
+            <h3>Recent Ideas</h3>
+
+            <div class="idea">
+                <h4>Faction Territory System</h4>
+                <small>Submitted by Player123</small>
+                <p>Allow factions to claim and defend regions on the map.</p>
+            </div>
+
+            <div class="idea">
+                <h4>Dynamic Weather Events</h4>
+                <small>Submitted by Player456</small>
+                <p>Random storms and environmental effects affecting gameplay.</p>
+            </div>
+
+            <div class="idea">
+                <h4>Economy Revamp</h4>
+                <small>Submitted by Player789</small>
+                <p>Add trading systems, shops, and inflation control.</p>
+            </div>
+
+        </div>
+
+        <!-- INFO PANEL -->
+        <div class="card">
+            <h3>How Ideas Work</h3>
+            <p>
+                Ideas are reviewed by staff and may be added into the server if approved.
+                High-quality suggestions may be implemented or expanded into full systems.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Worlds Collide
+</footer>
+
+</body>
+</html>
